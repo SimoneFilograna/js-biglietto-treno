@@ -51,7 +51,7 @@ if (age < 18) {
 if (age < 18) {
     document.getElementById("coupon").innerHTML = ("20%");   
 }   else if (age >= 65) {
-    document.getElementById("coupon").innerHTML = ("60%");
+    document.getElementById("coupon").innerHTML = ("40%");
 }   else {
     document.getElementById("coupon").innerHTML = ("/");
 }
