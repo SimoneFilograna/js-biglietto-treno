@@ -11,7 +11,13 @@ const minOffer = (price - (price * 0.20));
 const maxOffer = (price - (price * 0.40));
 
 
-console.log(kmRoute, age, price,  minOffer, maxOffer);
+console.log(kmRoute, age);
+console.log("prezzo");
+console.log(price);
+console.log("offerta minima");
+console.log(minOffer);
+console.log("offeta massima");
+console.log(maxOffer);
 
 
 
