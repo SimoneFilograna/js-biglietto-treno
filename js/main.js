@@ -1,5 +1,9 @@
+const firstName = prompt ("Inserisci qui il tuo nome")
+const lastName = prompt ("inserisci qui il tuo cognome")
 const kmRoute = parseInt( prompt ("Quanti km devi percorrere?"));
 const age = parseInt( prompt ("Quanti anni hai?"));
+
+//price in decimal conversion
 const price = (kmRoute * 0.21);
 const priceResult = price.toFixed(2);
 
@@ -27,11 +31,28 @@ console.log("offeta massima");
 console.log(maxOffer);
 
 
+document.getElementById("Name").innerHTML = firstName;
+document.getElementById("Surname").innerHTML = lastName;
+document.getElementById("Age").innerHTML = age;
+document.getElementById("road-km").innerHTML = kmRoute;
+
+//total price
 
 if (age < 18) {
-    document.getElementById("ticket-price").innerHTML = minResult;   
+    document.getElementById("ticket-price").innerHTML = (minResult + "€");   
 }   else if (age >= 65) {
-    document.getElementById("ticket-price").innerHTML = maxResult;
+    document.getElementById("ticket-price").innerHTML = (maxResult + "€");
 }   else {
-    document.getElementById("ticket-price").innerHTML = priceResult;
+    document.getElementById("ticket-price").innerHTML = (priceResult + "€");
 }
+
+//coupon
+
+if (age < 18) {
+    document.getElementById("coupon").innerHTML = ("20%");   
+}   else if (age >= 65) {
+    document.getElementById("coupon").innerHTML = ("60%");
+}   else {
+    document.getElementById("coupon").innerHTML = ("/");
+}
+

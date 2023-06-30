@@ -1,0 +1,7 @@
+.top-page{
+    height: 200px;
+    background-image: url(../img/header-img.avif);
+    background-size: cover;
+    background-position: bottom;
+    opacity: .8;
+}
